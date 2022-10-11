@@ -8,3 +8,5 @@ My Mail address is here: <mailto:teamtim16@naver.com>
 
 I hope we can meet soon.
 
+also we need to connect git reposite.
+hello
