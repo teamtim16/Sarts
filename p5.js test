@@ -1,0 +1,34 @@
+let ball;
+
+
+function setup() {
+  createCanvas(400, 400); 
+  ball = new Walker();
+}
+
+
+function draw() {
+  background(220, 5);
+  ball.update();
+  ball.display();
+}
+
+
+// old way to define Object
+function Walker() {
+  //setup values
+  this.x = width/2;
+  this.y = height/2;
+  this.w = 10;
+  
+  this.update = function() {
+    //update position
+  	this.x = this.x + random(-5, 5);
+  	this.y = this.y + random(-5, 5);
+  }
+  
+  this.display = function() {
+    //display walker
+	ellipse(this.x, this.y, this.w);
+  }
+}
